@@ -1,0 +1,8 @@
+.dream-balance {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 250px;
+  height: 100px;
+  z-index: 10000;
+}
