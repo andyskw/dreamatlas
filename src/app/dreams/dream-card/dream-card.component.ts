@@ -1,5 +1,5 @@
 import {Component, OnInit, Input} from '@angular/core';
-import {Dream} from "../shared/models/dream.interface";
+import {IDream} from "../shared/models/dream.interface";
 
 @Component({
   selector: 'app-dream-card',
@@ -9,10 +9,18 @@ import {Dream} from "../shared/models/dream.interface";
 export class DreamCardComponent implements OnInit {
 
   @Input('dream')
-  dream: Dream;
+  dream: IDream;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addCover() {
+    this.dream.currentlyCovered += 10000;
+  }
+
+  removeCover() {
+    this.dream.currentlyCovered -= 10000;
   }
 
 }
