@@ -17,10 +17,16 @@ export class DreamCardComponent implements OnInit {
 
   addCover() {
     this.dream.currentlyCovered += 10000;
+    if (this.dream.currentlyCovered > this.dream.price) {
+      this.dream.currentlyCovered = this.dream.price;
+    }
   }
 
   removeCover() {
     this.dream.currentlyCovered -= 10000;
+    if (this.dream.currentlyCovered < 0) {
+      this.dream.currentlyCovered = 0;
+    }
   }
 
 }
