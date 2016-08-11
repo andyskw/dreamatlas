@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { DreamsComponent } from './dreams/dreams.component';
 import { DreamCardComponent } from './dreams/dream-card/dream-card.component';
 import { DreamListComponent } from './dreams/dream-list/dream-list.component';
+import { DreamBalanceComponent } from './dreams/dream-balance/dream-balance.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DreamsComponent,
+    DreamBalanceComponent,
+
     DreamCardComponent,
-    DreamListComponent
+    DreamListComponent,
   ],
   imports: [
     BrowserModule,

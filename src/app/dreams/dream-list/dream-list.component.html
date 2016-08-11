@@ -1,3 +1,4 @@
 <div class="dream-list">
   <app-dream-card *ngFor="let dream of dreams" [dream]="dream"></app-dream-card>
 </div>
+<app-dream-balance [wallet]="wallet" [dreams]="dreams"></app-dream-balance>
