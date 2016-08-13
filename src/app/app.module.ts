@@ -7,6 +7,7 @@ import { DreamsComponent } from './dreams/dreams.component';
 import { DreamCardComponent } from './dreams/dream-card/dream-card.component';
 import { DreamListComponent } from './dreams/dream-list/dream-list.component';
 import { DreamBalanceComponent } from './dreams/dream-balance/dream-balance.component';
+import {LocalStorageService} from "angular2-localstorage/LocalStorageEmitter";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { DreamBalanceComponent } from './dreams/dream-balance/dream-balance.comp
     CommonModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LocalStorageService],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })
