@@ -1,5 +1,6 @@
 # Dreamatlas
 
+This project is intended to help you to have a clear understanding on how to fulfill your dreams financially.
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.2.
 
 ## Development server
