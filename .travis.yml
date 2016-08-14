@@ -19,6 +19,7 @@ before_install:
 script:
 - ng build --prod
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJNXVO3AZDNEV2YUQ
   secret_access_key:
