@@ -16,6 +16,7 @@ before_install:
 - sudo dpkg -i google-chrome*.deb
 - npm i -g typescript
 - npm i -g typings
+
 script:
 - ng build --prod
 deploy:
@@ -24,8 +25,9 @@ deploy:
   access_key_id: AKIAJNXVO3AZDNEV2YUQ
   secret_access_key:
     secure: Q/KwH/KMj3Bljx6wKfW41R1SsVZ4DdsyNwb78PI0vLHX3ilqwMON1aAmvBBbJRrAFhxegPOrB2ndTK8c7/wBTPHn3xbczR+Jus5tGom2zh/xK9ikAyRUKatfvYASR8e0/kFKHcyQjyLbv5dt4O5Ejuo0egkAzUoM17pgVzmrbjOhypGppB/MBi+OBAlNwtW4Qds/O94S97aYXtj/5G6pQzfhgHbINjxtuewtR1kfkYi8Fo1hmpK3RINRMHnGWcPJdaRQ5tU8wwvxeiw31nSRO/8IFIIy1L8jG3OQKZErzQ9mN5f35YwDukzFdUK+jvGS0skfFRlGqJkfBWl/8OjwWTS3nSUVrk7nYlByNHMqDRa0XpPoF8Lho58G3QwWXzaYnSrTg3op7wZ921pMpklaqhTh4tu2QLf5ChpchwanOHJHqLbeTL3M1fF0b/xkLpCbI4fm6a7kIVd9kfSjeZHsY3uok7yM9b2Gljft4T0ohIYNq3pj4lgtk98NC13I0R2+ihwUpay6xVG4v4wSIQ0p+XADZMvwwdy9Qgk/A/m4mz8bSnwZzxJYQstY0myyjVyVnfQzTywRBfqI20QV8i9mdf5n8qbSfyu6cNPU99Jr8JsK3bjJDEMSBnPeuypx41reie3wW/5GVF0v2aeioIHtUsDQEk3Jm1AS2nlVaFqgVNo=
-  bucket: dream-atlas.com
+  bucket: dev.dream-atlas.com
   local-dir: dist
   acl: public_read
   on:
     repo: andyskw/dreamatlas
+  region: eu-central-1
